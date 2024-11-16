@@ -1,0 +1,46 @@
+/***************BANNER***************/
+.banner {
+  background: linear-gradient(to left, rgb(6, 21, 60), rgb(26, 46, 98));
+  height: 5.4rem;
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.congrats {
+  margin-right: 2rem;
+}
+
+.announcement {
+  font-weight: 600;
+}
+
+.know-more {
+  color: #1e96fc;
+}
+
+.header--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.nav--ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.nav--ul li {
+  list-style: none;
+  color: #1a2e62;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
