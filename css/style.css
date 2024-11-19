@@ -26,6 +26,8 @@
   cursor: pointer;
 }
 
+/*****************HEADER**********************/
+
 .header {
   height: 9.2rem;
   padding: 1% 6.6rem 1% 7.5rem;
@@ -60,28 +62,9 @@
   font-family: Montserrat;
 }
 
-.btn {
-  font-size: 1.9rem;
-  border-radius: 0.8rem;
-  letter-spacing: 0.02857em;
-  cursor: pointer;
-}
-
-.login {
-  border: 1px solid rgb(26, 46, 98);
-  color: #1a2e62;
-  font-weight: 500;
-  background-color: #fcfcfc;
-  padding: 1.5rem 4.8rem;
-}
-
-.fill {
-  color: #fcfcfc;
-  background-color: #182c62;
-  font-weight: 600;
-  padding: 1.6rem 5.2rem;
-  border: none;
-}
+/****************************************/
+/**************SECTION-HERO**************/
+/****************************************/
 
 .hero--page-wrapper {
   max-width: 123rem;
@@ -109,6 +92,13 @@
   font-family: Montserrat;
 }
 
+.sub-heading {
+  font-size: 1.8rem;
+  line-height: 140%;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
 .hero--for-you {
   display: flex;
   align-items: center;
@@ -128,17 +118,6 @@
   line-height: 3.9rem;
   color: #1e96fc;
   font-weight: 500;
-}
-
-.sub-heading {
-  font-size: 1.8rem;
-  line-height: 140%;
-  opacity: 0.9;
-  font-weight: 400;
-}
-
-.hero--btn {
-  padding: 1.6rem 7.4rem;
 }
 
 .hero--btn-wrapper {
@@ -218,3 +197,7 @@
 .hero--mp41 {
   width: 100%;
 }
+
+/****************************************/
+/**********SECTION-CALCULATOR************/
+/****************************************/
