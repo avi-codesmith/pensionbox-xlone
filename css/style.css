@@ -169,6 +169,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.2rem;
 }
 
 .divider {
@@ -179,7 +180,7 @@
 }
 
 .download {
-  width: 90%;
+  width: 100%;
 }
 
 .hero--right-container {
@@ -201,3 +202,286 @@
 /****************************************/
 /**********SECTION-CALCULATOR************/
 /****************************************/
+
+.section-calculator {
+  margin-top: 11.4rem;
+}
+
+.section--calculator-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  flex-direction: column;
+}
+
+.calculator--heading-wrapper {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.calculator-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.2rem;
+}
+
+.calculator--pension-top {
+  position: relative;
+}
+
+.calculator--left-label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: #1a2e62;
+  color: #fff;
+  width: fit-content;
+  border: 0.1rem solid #fff;
+  font-family: Poppins;
+  padding: 1rem 2.4rem;
+  border-radius: 5rem;
+  box-shadow: 0px 0 5.569px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -7%;
+  right: 2%;
+  z-index: 1;
+}
+
+.calculator--left-wrapper {
+  border: 2.785px solid rgba(26, 46, 98, 0.2);
+  padding: 4.1rem 2rem 4.1rem 3rem;
+  position: relative;
+  border-radius: 2rem;
+  height: fit-content;
+  width: fit-content;
+}
+
+.calculator--left-heading {
+  font-family: montserrat;
+  color: #1a2e62;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 1.3rem;
+}
+
+.amount-in-rupee-sign-left {
+  color: #1e96fc;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 7.6rem;
+}
+
+.amount-in-input {
+  outline: none;
+  border: none;
+  height: 10rem;
+  width: 36rem;
+  color: #1e96fc;
+  background-color: #fcfcfc;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 7.6rem;
+  border-bottom: 3px solid #cce0f2;
+  transition: all 0.3s ease;
+  padding-left: 2rem;
+}
+
+.amount-in-input:hover {
+  border-bottom: 3px solid #1e96fc;
+}
+
+.amount-in-input[type="number"]::-webkit-inner-spin-button,
+.amount-in-input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.amount-in-month-left {
+  font-family: Montserrat;
+  font-size: 21px;
+  color: rgb(26, 46, 98);
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.45;
+}
+
+.calculator--arrow {
+  background-color: #f6f6f6;
+  height: fit-content;
+  width: fit-content;
+  padding: 1.4rem;
+  border-radius: 50%;
+  border: 1px solid #1a2e6233;
+  position: absolute;
+  top: 40%;
+  right: -4%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-arrow {
+  height: 1.8rem;
+  width: 1.8rem;
+  color: #999;
+}
+
+.calculator--left-bonus-point,
+.calculator--link {
+  font-family: Poppins;
+  font-size: 10.804px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.calculator--pension-bottom {
+  margin-top: 1.2rem;
+}
+
+.calculator--left-bonus-point {
+  opacity: 0.45;
+  color: rgb(26, 46, 98);
+}
+
+.calculator--link {
+  color: rgb(30, 150, 252);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.calculator--right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+}
+
+.calculator--invest-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13.2rem;
+}
+
+.calculator--invest-top {
+  background-color: #1a2e62;
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: 2rem;
+}
+
+.calculator--right-heading {
+  font-family: Montserrat;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.calculator--btn {
+  background-color: #1e96fc;
+  border-radius: 5rem;
+  border: none;
+  padding: 1.2rem 3rem;
+  cursor: pointer;
+}
+
+.calculator--btn:hover {
+  background-color: #48aaff;
+  transition: all 0.2s ease;
+}
+
+.btn--span {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+}
+
+.amount-in-rupee-sign-right,
+.amount-in-num-right {
+  font-size: 43px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: normal;
+  font-family: montserrat;
+}
+
+.amount-in-rupee-sign-right {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.amount-in-month-right {
+  font-family: Montserrat;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: normal;
+}
+
+.calculator--star {
+  height: 1.6rem;
+  width: 1.6rem;
+  stroke: #fff;
+  fill: #fff;
+}
+
+.calculator--right-bottom-wrapper {
+  position: relative;
+}
+
+.calculator--right-label {
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(91, 163, 0);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px 0px;
+  font-family: Poppins;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  height: fit-content;
+  width: fit-content;
+  padding: 1rem 2.4rem;
+  border-radius: 5rem;
+  position: absolute;
+  top: -18%;
+  left: 2%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.amount-in-rupee-sign-bottom-right,
+.amount-in-num-right-bottom {
+  font-family: Montserrat;
+  font-size: 37px;
+  color: rgb(26, 46, 98);
+  font-weight: 700;
+  line-height: normal;
+}
+
+.amount-in-rupee-sign-bottom-right {
+  font-weight: 500;
+  font-family: Roboto;
+}
+
+.amount-in-para {
+  font-family: Montserrat;
+  font-size: 13px;
+  color: rgb(26, 46, 98);
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.7;
+}
+
+.calculator--right-amount2 {
+  background-color: rgba(91, 163, 0, 0.1);
+  padding: 40px 16px 9px;
+  border-radius: 2rem;
+}
