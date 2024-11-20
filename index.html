@@ -140,7 +140,7 @@
 
             <div class="hero--btn-wrapper">
               <div class="hero--btn-banner-wrapper">
-                <button class="btn hero--btn fill">Get Started</button>
+                <button class="btn hero--btn fill">Get&nbsp;Started</button>
                 <div class="hero--btn-banner">
                   <span class="banner--1">it's</span>
                   <span class="banner--2">Free</span>
@@ -176,56 +176,71 @@
 
     <section class="section-calculator">
       <div class="section--calculator-wrapper">
-        <h2 class="minor-heading">Start Today, Invest Small,
-        <br>
-        <span class="change-color">Save Taxes</span> & Retire Peacefully</h2>
-        <p class="minor-max-heading">You are in The Tax Free Zone!</p>
+        <div class="calculator--heading-wrapper">
+          <h2 class="minor-heading">Start Today, Invest Small,
+          <br>
+          <span class="change-color">Save Taxes</span> & Retire Peacefully</h2>
+          <p class="minor-max-heading">You are in The Tax Free Zone!</p>
+        </div>
         <div class="calculator-wrapper">
-          <div class="calculator--left-wrapper">
-            <div class="calculator--pension-top">
-              <div class="calculator--left-label">
-                To retire like a boss 🤩
-              </div>
+          <div class="calculator--pension-top">
+            <div class="calculator--left-label">
+              To retire like a boss 🤩
+            </div>
+            <div class="calculator--left-wrapper">
               <div class="calculator--left-heading">Get Pension</div>
               <div class="calculator--left-amount">
-                <span class="amount-in-rupee-sign">₹</span>
-                <input type="text"  value="12,000" class="amount-in-num"></input>
-                <span class="amount-in-month">/ month *</span>
+                <span class="amount-in-rupee-sign-left">₹</span>
+                <input class="amount-in-input" 
+                aria-invalid="false" 
+                type="text" 
+                min="0" 
+                pattern="^\d{1,3}(,\d{3})*$" 
+                step="1" 
+                value="1,20,000"></input>
+                <span class="amount-in-month-left">/ month *</span>
               </div>
               <div class="calculator--arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="right-arrow">
                   <path fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8Z" clip-rule="evenodd" />
                 </svg>                
               </div>
             </div>
             <div class="calculator--pension-bottom">
               <span class="calculator--left-bonus-point">*Estimates are based on certain assumptions, Use our calculator & get the right estimates for you.</span>
+              <br>
               <span class="calculator--link">Learn more</span>
             </div>
           </div>
 
-          <div class="calculator--right-wrapper"></div>
+          <div class="calculator--right-wrapper">
             <div class="calculator--invest-top">
-             <div class="calculator--right-heading">Invest as little as</div>
-             <button class="calculator--btn"><span class="btn--span">Invest Now</span></button>
-             <div class="calculator--right-amount1">
-              <span class="amount-in-num">₹ 2,610*</span>
-              <span class="amount-in-month">/ month</span>
-             </div>
-            <div>
+              <div class="calculator--invest-wrapper">
+                <div class="calculator--right-heading">Invest as little as</div>
+                <button class="calculator--btn"><span class="btn--span">Invest Now</span></button>
+              </div>
+              <div class="calculator--right-amount1">
+                <span class="amount-in-rupee-sign-right">₹</span>
+                <span class="amount-in-num-right"> 2,610*</span>
+                <span class="amount-in-month-right">/ month</span>
+              </div>
+            </div>
 
+            <div class="calculator--right-bottom-wrapper">
               <div class="calculator--right-label">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="calculator--star">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
                 </svg>                
                 <span class="calculator--label-para">
                   Save Extra on Taxes Every Year
                 </span>
               </div>
-            <div class="calculator--invest-bottom">
-              <div class="calculator--right-amount2">
-                <span class="amount-in-num">₹ 24,000*</span>
-                <span class="amount-in-para">in 80C and 80 CCD dedductions</span>
+              <div class="calculator--invest-bottom">
+                <div class="calculator--right-amount2">
+                  <span class="amount-in-rupee-sign-bottom-right">₹</span>
+                  <span class="amount-in-num-right-bottom"> 24,000*</span>
+                  <span class="amount-in-para">in 80C and 80 CCD dedductions.</span>
+                </div>
               </div>
             </div>
           </div>
