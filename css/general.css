@@ -68,6 +68,7 @@ svg {
   color: rgb(26, 46, 98);
   font-weight: 700;
   line-height: 130%;
+  text-align: center;
 }
 
 .major-heading {
@@ -195,10 +196,6 @@ svg {
   font-weight: 600;
   /* padding: 1.6rem 7.2rem; */
   border: none;
-}
-
-.fill:hover {
-  background-color: #203874;
 }
 
 .return {
@@ -331,6 +328,7 @@ svg {
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
+  cursor: pointer;
 }
 
 .btn--img-wrapper {
@@ -353,5 +351,9 @@ svg {
   font-size: 12px;
   line-height: 1.75;
   letter-spacing: 0.02857em;
-  cursor: pointer;
+}
+
+.hover:hover {
+  opacity: 0.8;
+  transition: all 0.4s ease;
 }
