@@ -783,3 +783,118 @@
   opacity: 0.9;
   width: fit-content;
 }
+
+.section-testimonial {
+  margin-top: 13.5rem;
+  overflow: hidden; /* Hide overflow to keep the layout clean */
+  width: 100%; /* Ensure the container width covers the full screen */
+}
+
+.testimonial--heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.minor-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a2e62;
+}
+
+.color-blue {
+  color: #007bff;
+}
+
+.minor-max-heading {
+  font-size: 1.1rem;
+  color: #1a2e62;
+  opacity: 0.8;
+}
+
+/* Testimonial Wrapper Styling */
+.testimonial--wrapper {
+  display: flex;
+  width: 200%; /* Make the width twice the size of the viewport for seamless scroll */
+  animation: scroll-horizontal 30s linear infinite;
+}
+
+/* Testimonial Content Styling */
+.testimonial {
+  display: flex;
+  gap: 16px;
+  width: 50%; /* Ensure each testimonial takes 50% width so two can be shown side by side */
+  flex-shrink: 0; /* Prevent shrinking of the testimonial cards */
+}
+
+.card {
+  width: 19.3rem; /* Card width */
+  height: 27.1rem; /* Card height */
+  flex-shrink: 0; /* Prevent shrinking during flex wrapping */
+  border-radius: 18.403px;
+  background: #fff;
+  border: 1.77px solid rgb(225, 241, 255);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.customer {
+  width: 100%;
+  height: 100%;
+  border-radius: 18.403px;
+  object-fit: cover;
+}
+
+/* Scroll Animation */
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-100%); /* Scroll full width of the first container */
+  }
+}
+
+/* Pause scrolling on hover */
+.testimonial:hover {
+  animation-play-state: paused; /* Pause scrolling on hover */
+}
+
+/* Styling for Reply Section */
+.reply {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: rgb(26, 46, 98);
+  font-weight: 500;
+  line-height: 140%;
+  opacity: 0.9;
+  padding: 16px 8px 16px 16px;
+  overflow-y: auto;
+}
+
+/* Author Info Styling */
+.reply-by-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+}
+
+.by-name {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  color: rgb(26, 46, 98);
+  font-weight: 600;
+  line-height: 140%;
+  opacity: 0.9;
+}
+
+.by-work {
+  font-family: Poppins, sans-serif;
+  font-size: 8px;
+  color: rgb(26, 46, 98);
+  font-weight: 600;
+  line-height: 140%;
+  opacity: 0.6;
+}

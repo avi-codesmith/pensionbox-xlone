@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f1f3f5 #fff;
+}
+
+html,
+body {
+  scrollbar-color: #1e96fc #fff;
+}
+
 html {
   font-size: 62.5%;
 }
