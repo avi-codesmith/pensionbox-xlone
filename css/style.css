@@ -812,18 +812,31 @@
 }
 
 /* Testimonial Wrapper Styling */
+
 .testimonial--wrapper {
+  white-space: nowrap;
+  animation: scroll-horizontal 40s linear infinite;
   display: flex;
-  width: 200%; /* Make the width twice the size of the viewport for seamless scroll */
-  animation: scroll-horizontal 30s linear infinite;
+  position: relative;
+  gap: 16px;
+}
+
+.testimonial--wrapper:hover {
+  animation-play-state: paused;
 }
 
 /* Testimonial Content Styling */
+
 .testimonial {
   display: flex;
-  gap: 16px;
-  width: 50%; /* Ensure each testimonial takes 50% width so two can be shown side by side */
-  flex-shrink: 0; /* Prevent shrinking of the testimonial cards */
+  gap: 16px; /* Add gap between cards */
+  width: max-content; /* Ensure no cards shrink into overlapping */
+  flex-shrink: 0;
+  margin-top: 2rem;
+}
+
+.move-left {
+  animation: move-left 40s linear infinite;
 }
 
 .card {
@@ -837,7 +850,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
+  box-sizing: border-box; /* Ensure padding is within width/height */
 }
 
 .customer {
@@ -857,6 +870,15 @@
   }
 }
 
+@keyframes move-left {
+  0% {
+    transform: translateX(-100%); /* Start position */
+  }
+  100% {
+    transform: translateX(0); /* Scroll full width of the first container */
+  }
+}
+
 /* Pause scrolling on hover */
 .testimonial:hover {
   animation-play-state: paused; /* Pause scrolling on hover */
@@ -872,6 +894,7 @@
   opacity: 0.9;
   padding: 16px 8px 16px 16px;
   overflow-y: auto;
+  white-space: wrap;
 }
 
 /* Author Info Styling */
@@ -897,4 +920,34 @@
   font-weight: 600;
   line-height: 140%;
   opacity: 0.6;
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.profile-text {
+  font-family: Montserrat;
+  font-size: 12px;
+  color: rgb(26, 46, 98);
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.profile-btn {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+
+  background-color: rgb(30, 150, 252);
+  border: none rgb(255, 255, 255);
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
 }
