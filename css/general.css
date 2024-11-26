@@ -358,7 +358,7 @@ svg {
   font-weight: 600;
   font-style: normal;
   color: rgb(252, 252, 252);
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 1.75;
   letter-spacing: 0.02857em;
 }
@@ -366,4 +366,43 @@ svg {
 .hover:hover {
   opacity: 0.9;
   transition: all 0.4s ease;
+}
+
+.story {
+  background-color: rgba(0, 123, 255, 0.8);
+  display: flex;
+  align-items: center;
+  width: 47.3rem;
+  border-radius: 2rem;
+  justify-content: space-between;
+  cursor: pointer;
+  /* gap: 3.4rem; */
+}
+
+.story--text-wrapper {
+  padding: 0 0 0 3.4rem;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.story--heading {
+  font-family: Montserrat;
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: normal;
+}
+
+.story--side-img {
+  border-radius: 0 2rem 2rem 0;
+}
+
+.story--sub-heading {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.8;
 }
