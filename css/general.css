@@ -14,6 +14,10 @@ body {
   scrollbar-color: #1e96fc #fff;
 }
 
+.sidebar::-webkit-scrollbar-track {
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
 html {
   font-size: 62.5%;
 }

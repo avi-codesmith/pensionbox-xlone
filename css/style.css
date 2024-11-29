@@ -1,4 +1,14 @@
+/**************STICKY-WORK************/
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(252, 252, 252, 0.949);
+}
+
 /***************BANNER***************/
+
 .banner {
   background: linear-gradient(to left, rgb(6, 21, 60), rgb(26, 46, 98));
   height: 5.4rem;
@@ -284,7 +294,8 @@
   padding-left: 2rem;
 }
 
-.amount-in-input:hover {
+.amount-in-input:hover,
+.amount-in-input:active {
   border-bottom: 3px solid #1e96fc;
 }
 
@@ -583,7 +594,8 @@
   transition: all 0.4s ease;
 }
 
-.know-more-btn:hover {
+.know-more-btn:hover,
+.know-more-btn:active {
   background-color: #fcfcfc;
 }
 
@@ -681,7 +693,8 @@
   right: 8%;
 }
 
-.table-1--button:hover {
+.table-1--button:hover,
+.table-1--button:active {
   background-color: rgb(31, 56, 120);
   transition: all 0.4s ease;
 }
@@ -825,7 +838,8 @@
   gap: 16px;
 }
 
-.testimonial--wrapper:hover {
+.testimonial--wrapper:hover,
+.testimonial--wrapper:active {
   animation-play-state: paused;
 }
 
@@ -884,7 +898,9 @@
 }
 
 /* Pause scrolling on hover */
-.testimonial:hover {
+
+.testimonial:hover,
+.testimonial:active {
   animation-play-state: paused; /* Pause scrolling on hover */
 }
 
@@ -1491,6 +1507,7 @@
 .logo-social {
   font-size: 3.4rem;
   color: #1a2e62;
+  cursor: pointer;
 }
 
 .footer-main-heading {
