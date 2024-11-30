@@ -3,7 +3,7 @@
 .sticky {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
   background-color: rgba(252, 252, 252, 0.949);
 }
 
@@ -907,7 +907,7 @@
 /* Styling for Reply Section */
 .reply {
   font-family: Poppins, sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: rgb(26, 46, 98);
   font-weight: 500;
   line-height: 140%;
@@ -926,7 +926,7 @@
 
 .by-name {
   font-family: Poppins, sans-serif;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: rgb(26, 46, 98);
   font-weight: 600;
   line-height: 140%;
@@ -935,7 +935,7 @@
 
 .by-work {
   font-family: Poppins, sans-serif;
-  font-size: 8px;
+  font-size: 0.8rem;
   color: rgb(26, 46, 98);
   font-weight: 600;
   line-height: 140%;
@@ -1475,10 +1475,10 @@
 
 .main-footer-wrapper {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 10%;
   padding-left: 18rem;
   padding-right: 18rem;
-  gap: 32.2rem;
 }
 
 .logo2 {
@@ -1512,7 +1512,7 @@
 
 .footer-main-heading {
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: rgb(26, 46, 98);
   font-weight: 700;
   line-height: 23px;
@@ -1521,7 +1521,7 @@
 
 .footer-main-ul li {
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: rgb(26, 46, 98);
   font-weight: 500;
   line-height: 23px;
@@ -1536,10 +1536,10 @@
 
 .nav-part {
   display: grid;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
   row-gap: 2.4rem;
-  column-gap: 18.2rem;
+  column-gap: 8.2rem;
 }
 
 .back-img {
