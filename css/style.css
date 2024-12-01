@@ -54,6 +54,8 @@
 .pensionbox-logo {
   align-self: flex-end;
   cursor: pointer;
+  height: auto;
+  width: auto;
 }
 
 .header--label {
@@ -71,6 +73,56 @@
   font-family: Montserrat;
 }
 
+.hidden-nav-wrapper {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99999;
+  background-color: #fcfcfc;
+  padding: 2% 4.2%;
+  overflow: scroll;
+}
+
+.hidden-nav--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actual-nav-wrapper {
+  padding-top: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.close {
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+.hidden-nav--btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.hidden-nav--btn {
+  padding: 1.2rem 0;
+}
+
+.hidden-nav--link {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(30, 150, 252);
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
 /****************************************/
 /**************SECTION-HERO**************/
 /****************************************/
@@ -78,6 +130,7 @@
 .hero--page-wrapper {
   max-width: 123rem;
   margin: 0 auto;
+  padding: 0 2% 0 2%;
 }
 
 .hero--page-wrapper2 {
@@ -207,6 +260,7 @@
 
 .section-calculator {
   margin-top: 11.4rem;
+  padding: 2%;
 }
 
 .section--calculator-wrapper {
@@ -572,12 +626,20 @@
   margin-top: 5.2rem;
   display: grid;
   gap: 10.2rem;
+  align-items: center;
+  justify-items: center;
+  padding: 0 10% 0 10%;
 }
 
 .sub-heading-wrapper {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.zig-zag-video {
+  height: 90%;
+  width: 90%;
 }
 
 .know-more-btn {
@@ -609,6 +671,9 @@
 
 .section-table-wrapper {
   width: 108.2rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
 .table--heading-wrapper {
@@ -617,7 +682,7 @@
 
 .table-1 {
   width: 100%;
-  height: 279px;
+  height: 27.9rem;
   border-radius: 26px;
   border: 0.582px solid rgb(255, 255, 255);
   background: linear-gradient(rgb(26, 46, 98) 0%, rgb(6, 21, 60) 100%);
@@ -701,7 +766,8 @@
 
 .grid {
   display: grid;
-  gap: 3.6rem;
+  column-gap: 3.6rem;
+  row-gap: 3.6rem;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
@@ -714,7 +780,7 @@
 
 .table-2 {
   width: 100%;
-  height: 196px;
+  height: 19.6rem;
   border-radius: 9.307px;
   border: 0.582px solid rgb(255, 255, 255);
   padding: 20px;
@@ -752,10 +818,10 @@
     rgba(255, 255, 255, 0.95) 51.54%,
     rgba(255, 255, 255, 0.46) 83.85%
   );
-  padding: 4px 7px;
-  border-radius: 3px;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.3rem;
   font-family: Poppins;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: rgb(124, 73, 0);
   font-weight: 600;
   line-height: 109%;
@@ -770,7 +836,7 @@
 
 .table-2--ul li {
   font-family: Poppins;
-  font-size: 19px;
+  font-size: 1.9rem;
   color: rgb(255, 255, 255);
   font-weight: 500;
   line-height: 145%;
@@ -787,10 +853,10 @@
 .white {
   background-color: rgba(255, 255, 255, 0.245);
   color: #fff;
-  padding: 4px 7px;
+  padding: 0.4rem 0.7rem;
   border-radius: 3px;
   font-family: Poppins;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 109%;
   opacity: 0.9;
@@ -1129,7 +1195,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 0.5rem;
   padding: 2rem 0 0 2rem;
 }
 
@@ -1139,10 +1205,15 @@
 
 .need--heading {
   font-family: Poppins;
-  font-size: 21px;
+  font-size: 2rem1;
   color: rgb(188, 223, 253);
   font-weight: 600;
   line-height: 130%;
+}
+
+.need--img {
+  height: auto;
+  width: auto;
 }
 
 .need-links {
@@ -1156,11 +1227,11 @@
 
 .need--li {
   font-family: Poppins;
-  font-size: 17px;
+  font-size: 1.7rem;
   color: rgb(255, 255, 255);
   font-weight: 600;
   line-height: normal;
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 1px 10.9px;
+  text-shadow: rgba(0, 0, 0, 0.25) 0rem 0.1rem 1.09rem;
   border-bottom: 1px solid;
   text-decoration: none;
 }
@@ -1174,7 +1245,7 @@
 
 .need--major-heading {
   font-family: Montserrat;
-  font-size: 40px;
+  font-size: 4rem;
   color: rgb(255, 255, 255);
   font-weight: 800;
   line-height: 101%;
@@ -1190,7 +1261,7 @@
   font-weight: 600;
   font-style: normal;
   color: rgb(26, 46, 98);
-  font-size: 14px;
+  font-size: 1.4rem;
   padding: 0.4rem 0.8rem;
   border-radius: 0.4rem;
   border: none;
@@ -1239,7 +1310,7 @@
 
 .need--small-heading {
   font-family: Montserrat;
-  font-size: 40px;
+  font-size: 4rem;
   color: rgb(26, 46, 98);
   font-weight: 800;
   line-height: 101%;
@@ -1253,7 +1324,7 @@
   font-weight: 600;
   font-style: normal;
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 1.4rem;
   padding: 1.2rem 2.4rem;
   border-radius: 0.8rem;
   cursor: pointer;
@@ -1272,9 +1343,9 @@
 }
 
 .faq {
-  border: 1px solid #ddd;
+  border: 0.1rem solid #ddd;
   border-radius: 0.6rem;
-  padding: 8px 16px;
+  padding: 0.8rem 1.6rem;
   width: 85.5rem;
   margin-top: 1.2rem;
 }
@@ -1439,11 +1510,11 @@
 
 .aside-primary-heading {
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: rgb(26, 46, 98);
   font-weight: 600;
-  line-height: 26px;
-  margin-bottom: 2rem;
+  line-height: 2.6rem;
+  margin-bottom: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1452,17 +1523,17 @@
 
 .aside-sub-heading {
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: rgb(26, 46, 98);
   font-weight: 600;
-  line-height: 22px;
+  line-height: 2.2rem;
   z-index: 1;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2%;
 }
 
 /************************************/
@@ -1524,7 +1595,7 @@
   font-size: 1.8rem;
   color: rgb(26, 46, 98);
   font-weight: 500;
-  line-height: 23px;
+  line-height: 2rem3;
   cursor: pointer;
   list-style: none;
   margin-bottom: 1.4rem;
@@ -1546,14 +1617,14 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 4.2rem;
-  box-shadow: 0 10px 6px rgba(153, 153, 153, 0.017);
+  box-shadow: 0 1rem 0.6rem rgba(153, 153, 153, 0.017);
 }
 
 .the-end {
   padding: 4.2rem;
   background-color: #fcfcfc;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: rgb(26, 46, 98);
   font-weight: 500;
   line-height: 15.33px;
@@ -1574,7 +1645,7 @@
 .copyright {
   background-color: #fcfcfc;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: rgb(26, 46, 98);
   font-weight: 500;
   line-height: 15.33px;

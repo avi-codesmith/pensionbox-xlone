@@ -3,7 +3,7 @@
 @media (max-width: 90em) {
   .aside--heading-wrapper {
     position: absolute;
-    top: 40%;
+    top: 45%;
   }
 
   html {
@@ -38,6 +38,11 @@
     font-size: 50.25%;
   }
 
+  .aside--heading-wrapper {
+    position: absolute;
+    top: 45%;
+  }
+
   .card {
     width: 16.23rem;
     height: 22.73rem;
@@ -57,10 +62,74 @@
   }
 
   .footer-main-heading {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .footer-main-ul li {
+    font-size: 1.5rem;
+  }
+
+  .story {
+    width: 50.2rem;
+  }
+
+  .section-zig-zag {
+    padding: 0 5% 0 5%;
+  }
+
+  .zig-zag-video {
+    height: 95%;
+    width: 95%;
+  }
+
+  .section-calulator- {
+    padding: 5.8rem;
+  }
+
+  .major-heading {
+    font-size: 4.2rem;
+  }
+
+  .section--zig-zag-wrapper {
+    gap: 14.2rem;
+  }
+
+  .section-zig-zag {
+    gap: 16.2rem;
+  }
+
+  .need--img {
+    height: 15%;
+    width: 15%;
+  }
+
+  .nav-part {
+    column-gap: 5.2rem;
+  }
+
+  .pensionbox-logo {
+    height: 5rem;
+    width: 18rem;
+  }
+
+  .login {
+    padding: 1.5rem 4.8rem;
+  }
+
+  .aside-primary-heading {
     font-size: 1.8rem;
+  }
+
+  .aside-sub-heading {
+    font-size: 1.4rem;
+  }
+
+  .header--btn {
+    padding: 1.6rem 4.4rem;
+  }
+
+  .grid {
+    column-gap: 3.6rem;
+    row-gap: 0;
   }
 }
