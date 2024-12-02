@@ -82,12 +82,25 @@
   background-color: #fcfcfc;
   padding: 2% 4.2%;
   overflow: scroll;
+  transform: translateX(100%);
+  transition: all 0.45s ease-out;
 }
 
 .hidden-nav--header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+}
+
+.cut {
+  display: none;
+}
+
+.btn-mobile-nav {
+  stroke: #1a2e62;
 }
 
 .actual-nav-wrapper {
@@ -189,14 +202,14 @@
 .hero--btn-banner {
   background-color: #1e96fc;
   color: #fff;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 500;
   position: absolute;
   top: -18%;
   right: 3%;
   padding: 0.5rem 0.5rem;
   border-radius: 0.4rem;
-  border: 1px solid #fcfcfc;
+  border: 0.1rem solid #fcfcfc;
 }
 
 .hero--links-for-app {
@@ -947,7 +960,7 @@
 /* Scroll Animation */
 @keyframes scroll-horizontal {
   0% {
-    transform: translateX(0); /* Start position */
+    translateX(0); /* Start position */
   }
   100% {
     transform: translateX(-100%); /* Scroll full width of the first container */

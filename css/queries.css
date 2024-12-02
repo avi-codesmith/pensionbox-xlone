@@ -8,6 +8,7 @@
 
   html {
     font-size: 59.2%;
+    overflow-x: hidden;
   }
 }
 
@@ -16,6 +17,7 @@
 @media (max-width: 84em) {
   html {
     font-size: 56.25%;
+    overflow-x: hidden;
   }
 
   .header--btn-wrapper {
@@ -36,6 +38,7 @@
 @media (max-width: 75em) {
   html {
     font-size: 50.25%;
+    overflow-x: hidden;
   }
 
   .aside--heading-wrapper {
@@ -131,5 +134,58 @@
   .grid {
     column-gap: 3.6rem;
     row-gap: 0;
+  }
+
+  .main-footer-wrapper {
+    padding: 0.8rem 6rem 0.8rem 6rem;
+  }
+}
+
+/* NAVBAR CASE */
+
+@media (max-width: 58em) {
+  html {
+    font-size: 46%;
+  }
+
+  .nav {
+    display: none;
+    visibility: hidden;
+  }
+
+  .header--wrapper {
+    justify-content: space-between;
+  }
+
+  .hidden {
+    padding: 1.2rem;
+  }
+
+  .story {
+    width: 54.2rem;
+  }
+
+  .main-footer-wrapper {
+    padding: 0.8erm 1.4rem 0.8rem 1.4rem;
+  }
+
+  .header {
+    padding: 0.8rem 1.4rem;
+  }
+
+  .hamburger {
+    height: 3.2rem;
+    width: 3.2rem;
+    margin: 1.6rem;
+    margin-right: 1rem;
+    stroke: rgb(26, 46, 98);
+  }
+
+  .nav-open .hidden-nav-wrapper {
+    transform: translateX(0);
+  }
+
+  .cut {
+    display: block;
   }
 }

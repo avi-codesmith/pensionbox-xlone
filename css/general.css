@@ -6,12 +6,14 @@
 
 * {
   scrollbar-width: thin;
+  scrollbar-color: #f1f1f1 #fff;
 }
 
 html,
 body {
   scrollbar-color: #1e96fc #fff;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  position: relative;
 }
 
 .sidebar::-webkit-scrollbar-track {
@@ -29,6 +31,7 @@ body {
   background-color: #fcfcfc;
   user-select: none;
   font-family: Poppins;
+  overflow-x: hidden !important;
 }
 
 *:focus {
@@ -100,13 +103,11 @@ svg {
 }
 
 .new-tag {
-  width: 4.7rem;
-  height: 2.2em;
   border-radius: 0.4rem;
   background: linear-gradient(
     141deg,
     rgb(30, 150, 252) 0%,
-    rgba(30, 150, 252, 0.5) 74.48%,
+    rgba(30, 150, 252, 0.5) 70.48%,
     rgb(30, 150, 252) 100%
   );
   box-shadow: rgba(0, 0, 0, 0.25) 0rem 0.4rem 1.7rem -0.3rem;
@@ -114,10 +115,10 @@ svg {
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
   font-weight: 600;
-  padding: 0.2rem 0.8rem 0.4rem 0.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.6rem 0.8rem;
 }
 
 .container-wrapper {
@@ -365,6 +366,11 @@ svg {
   height: 1.4rem;
   width: 1.4rem;
   color: rgb(30, 150, 252);
+}
+
+.owerflow-hidden {
+  overflow: hidden;
+  height: 100vh;
 }
 
 .product-btn {
