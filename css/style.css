@@ -72,7 +72,6 @@
   font-weight: 600;
   font-family: Montserrat;
 }
-
 .hidden-nav-wrapper {
   position: absolute;
   top: 0;
@@ -327,7 +326,7 @@
   position: relative;
   border-radius: 2rem;
   height: fit-content;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .calculator--left-heading {
@@ -650,6 +649,12 @@
   gap: 0.5rem;
 }
 
+.zig-zag--video-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .zig-zag-video {
   height: 90%;
   width: 90%;
@@ -683,7 +688,7 @@
 }
 
 .section-table-wrapper {
-  width: 108.2rem;
+  width: auto;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -695,7 +700,7 @@
 
 .table-1 {
   width: 100%;
-  height: 27.9rem;
+  height: 25rem;
   border-radius: 26px;
   border: 0.582px solid rgb(255, 255, 255);
   background: linear-gradient(rgb(26, 46, 98) 0%, rgb(6, 21, 60) 100%);
@@ -780,7 +785,7 @@
 .grid {
   display: grid;
   column-gap: 3.6rem;
-  row-gap: 3.6rem;
+  /* row-gap: 3.6rem; */
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
@@ -793,21 +798,17 @@
 
 .table-2 {
   width: 100%;
-  height: 19.6rem;
+  height: fit-content;
   border-radius: 9.307px;
   border: 0.582px solid rgb(255, 255, 255);
-  padding: 20px;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
+  padding: 2rem;
   cursor: pointer;
   background: linear-gradient(rgb(255, 173, 48) 44.73%, rgb(241, 165, 91) 100%);
 }
 
 .table-2--text-wrapper {
   display: flex;
+  gap: 3.6rem;
 }
 
 .table-2--heading-label-wrapper {
@@ -953,7 +954,7 @@
 .customer {
   width: 100%;
   height: 100%;
-  border-radius: 18.403px;
+  border-radius: 7.403px;
   object-fit: cover;
 }
 
@@ -1095,6 +1096,11 @@
   text-align: center;
 }
 
+.logo-brand-wrapper {
+  display: flex;
+  gap: 14.4rem;
+}
+
 .logos {
   gap: 18.2rem;
   /* Ensure no cards shrink into overlapping */
@@ -1113,8 +1119,8 @@
   justify-content: center;
 }
 
-.logo-brand-wrapper {
-  display: flex;
+
+.brand-wrapper {
   gap: 18.2rem;
   flex-shrink: 0;
   overflow: hidden;
@@ -1132,7 +1138,7 @@
 }
 
 .logo-brand {
-  height: 6.4rem; /* Card height */
+  height: 6.4rem; 
   flex-shrink: 0; /* Prevent shrinking during flex wrapping */
   overflow: hidden;
   display: flex;
