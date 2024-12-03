@@ -94,6 +94,14 @@ svg {
   padding: 0.8rem 0;
 }
 
+.default-hidden-table {
+  display: none;
+}
+
+.dark-blue-b {
+  background: linear-gradient(rgb(26, 46, 98) 0%, rgb(6, 21, 60) 100%);
+}
+
 .heading-hidden-major {
   font-family: Montserrat;
   font-size: 1.8rem;
@@ -249,6 +257,10 @@ svg {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+
+.d-blue-color {
+  color: #182c62;
 }
 
 .left {
@@ -490,4 +502,10 @@ svg {
   font-weight: 500;
   line-height: 16px;
   opacity: 0.8;
+}
+
+.default-hidden-img {
+  display: none;
+  height: 70%;
+  width: 70%;
 }

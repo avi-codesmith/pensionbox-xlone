@@ -144,10 +144,6 @@
 /* NAVBAR CASE */
 
 @media (max-width: 58em) {
-  html {
-    font-size: 46%;
-  }
-
   .nav {
     display: none;
     visibility: hidden;
@@ -187,5 +183,123 @@
 
   .cut {
     display: block;
+  }
+
+  .calculator-wrapper {
+    display: block;
+  }
+
+  .calculator--pension-bottom {
+    margin: 1.2rem 0 2.4rem 0;
+  }
+
+  .hidden-img {
+    display: none;
+  }
+
+  .default-hidden-img {
+    display: block;
+  }
+
+  .product--card-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.2rem 0 12.2rem 0;
+    gap: 3.2rem;
+  }
+
+  .section--zig-zag-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .zig-zag--vedio-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  .zig-zag-video {
+    height: 70%;
+    width: 70%;
+  }
+
+  .hero--btn-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .hero--links-for-app {
+    gap: 1.6rem;
+  }
+
+  .hero--app-wrapper {
+    gap: 0;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .download {
+    height: 90%;
+    width: 90%;
+  }
+
+  .stories-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-footer-wrapper {
+    flex-direction: column;
+    gap: 8.2rem;
+  }
+
+  .logo-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .align {
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  .section-table {
+    padding: 2.4rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2.4rem;
+  }
+
+  .nav-part {
+    justify-content: center;
+  }
+
+  .table-1 {
+    display: none;
+  }
+
+  .default-hidden-table {
+    display: block;
+  }
+
+  .table-2--text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .table-2--heading-label-wrapper {
+    gap: 2.4rem;
   }
 }
