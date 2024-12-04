@@ -1,9 +1,10 @@
 /**************STICKY-WORK************/
 
 .sticky {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 9999;
+  width: 100%;
   background-color: rgba(252, 252, 252, 0.949);
 }
 
@@ -21,6 +22,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
+  padding: 2.4rem;
+  width: 100%;
 }
 
 .congrats {
@@ -40,6 +43,7 @@
 
 .header {
   height: 9.2rem;
+  width: 100%;
   padding: 1% 6.6rem 1% 7.5rem;
 }
 
@@ -49,6 +53,11 @@
   justify-content: center;
   gap: 2.4rem;
   position: relative;
+  width: 100%;
+}
+
+.para {
+  line-height: 2rem;
 }
 
 .pensionbox-logo {
@@ -150,6 +159,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 7.2rem;
   padding-top: 5%;
+  margin-top: 12%;
 }
 
 .hero--left-container {
@@ -372,7 +382,7 @@
 
 .amount-in-month-left {
   font-family: Montserrat;
-  font-size: 21px;
+  font-size: 2.1rem;
   color: rgb(26, 46, 98);
   font-weight: 600;
   line-height: normal;
@@ -404,7 +414,7 @@
 .calculator--left-bonus-point,
 .calculator--link {
   font-family: Poppins;
-  font-size: 10.804px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 130%;
 }
@@ -445,7 +455,7 @@
 
 .calculator--right-heading {
   font-family: Montserrat;
-  font-size: 21px;
+  font-size: 2.1rem;
   color: rgb(255, 255, 255);
   font-weight: 600;
 }
@@ -468,12 +478,12 @@
   font-weight: 600;
   font-style: normal;
   color: rgb(255, 255, 255);
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .amount-in-rupee-sign-right,
 .amount-in-num-right {
-  font-size: 43px;
+  font-size: 4.3rem;
   color: rgb(255, 255, 255);
   font-weight: 700;
   line-height: normal;
@@ -491,7 +501,7 @@
 
 .amount-in-month-right {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: rgb(255, 255, 255);
   font-weight: 600;
   line-height: normal;
@@ -533,7 +543,7 @@
 .amount-in-rupee-sign-bottom-right,
 .amount-in-num-right-bottom {
   font-family: Montserrat;
-  font-size: 37px;
+  font-size: 3.7rem;
   color: rgb(26, 46, 98);
   font-weight: 700;
   line-height: normal;
@@ -550,7 +560,7 @@
 
 .amount-in-para {
   font-family: Montserrat;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: rgb(26, 46, 98);
   font-weight: 600;
   line-height: normal;
@@ -559,7 +569,7 @@
 
 .calculator--right-amount2 {
   background-color: rgba(91, 163, 0, 0.1);
-  padding: 40px 16px 9px;
+  padding: 4rem 1.6rem 0.9rem;
   border-radius: 2rem;
 }
 
@@ -616,18 +626,18 @@
 
 .card-para {
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: rgb(26, 46, 98);
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.6rem;
 }
 
 .card-time {
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: rgba(26, 46, 98, 0.9);
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.6rem;
 }
 
 /****************************************/
@@ -665,7 +675,7 @@
   font-weight: 600;
   font-style: normal;
   color: rgb(30, 150, 252);
-  font-size: 12px;
+  font-size: 1.2rem;
   background-color: rgba(30, 150, 252, 0.1);
   border-radius: 1rem;
   border: 1px solid #1e96fc;
@@ -737,7 +747,7 @@
   padding: 4px 7px;
   border-radius: 3px;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: rgb(26, 46, 98);
   font-weight: 600;
   line-height: 109%;
@@ -767,7 +777,7 @@
   font-weight: 600;
   font-style: normal;
   color: rgb(255, 255, 255);
-  font-size: 19px;
+  font-size: 1.9rem;
   padding: 1.4rem 3.4rem;
   width: fit-content;
   border-radius: 1rem;
@@ -915,7 +925,7 @@
   animation: scroll-horizontal 40s linear infinite;
   display: flex;
   position: relative;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .testimonial--wrapper:hover,
@@ -961,7 +971,7 @@
 /* Scroll Animation */
 @keyframes scroll-horizontal {
   0% {
-    translateX(0); /* Start position */
+    transform: trnaslateX(0%); /* Start position */
   }
   100% {
     transform: translateX(-100%); /* Scroll full width of the first container */
@@ -992,7 +1002,7 @@
   font-weight: 500;
   line-height: 140%;
   opacity: 0.9;
-  padding: 16px 8px 16px 16px;
+  padding: 1.6rem 0.8rem 1.6rem 1.6rem;
   overflow-y: auto;
   white-space: wrap;
 }
@@ -1043,7 +1053,7 @@
   font-weight: 600;
   font-style: normal;
   color: rgb(255, 255, 255);
-  font-size: 10px;
+  font-size: 1rem;
 
   background-color: rgb(30, 150, 252);
   border: none rgb(255, 255, 255);
@@ -1089,10 +1099,10 @@
 
 .slider-heading {
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: rgb(26, 46, 98);
   font-weight: 700;
-  line-height: 72px;
+  line-height: 7.2rem;
   text-align: center;
 }
 
@@ -1119,7 +1129,6 @@
   justify-content: center;
 }
 
-
 .brand-wrapper {
   gap: 18.2rem;
   flex-shrink: 0;
@@ -1138,7 +1147,7 @@
 }
 
 .logo-brand {
-  height: 6.4rem; 
+  height: 6.4rem;
   flex-shrink: 0; /* Prevent shrinking during flex wrapping */
   overflow: hidden;
   display: flex;
@@ -1356,7 +1365,7 @@
 .faq-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   gap: 2.4rem;
 }
@@ -1366,6 +1375,7 @@
   border-radius: 0.6rem;
   padding: 0.8rem 1.6rem;
   width: 85.5rem;
+  /* width: 100%; */
   margin-top: 1.2rem;
 }
 
@@ -1389,11 +1399,11 @@
   color: #1a2e62;
   width: 100%;
   opacity: 0.8;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: left;
   font-family: Poppins;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 2.1rem;
 }
 
 .chevron {
@@ -1407,13 +1417,13 @@
 
 .hidden {
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: rgb(26, 46, 98);
   font-weight: 500;
-  line-height: 21px;
+  line-height: 2.1rem;
   text-align: left;
 
-  padding-left: 16px;
+  padding-left: 1.6rem;
   display: none;
 }
 
@@ -1459,11 +1469,11 @@
 
 .bar--step-heading {
   color: #6a6a6a;
-  font-size: 10px;
+  font-size: 1rem;
   font-style: normal;
   font-family: Poppins;
   font-weight: 500;
-  line-height: 15px;
+  line-height: 1.5rem;
 }
 
 .bar--text1 {
@@ -1605,7 +1615,7 @@
   font-size: 1.8rem;
   color: rgb(26, 46, 98);
   font-weight: 700;
-  line-height: 23px;
+  line-height: 2.3rem;
   margin-bottom: 1.7rem;
 }
 
@@ -1646,7 +1656,7 @@
   font-size: 1.4rem;
   color: rgb(26, 46, 98);
   font-weight: 500;
-  line-height: 15.33px;
+  line-height: 1.5rem;
   text-align: left;
   margin-bottom: 3.2rem;
 
@@ -1667,7 +1677,7 @@
   font-size: 1.4rem;
   color: rgb(26, 46, 98);
   font-weight: 500;
-  line-height: 15.33px;
+  line-height: 1.5rem;
   text-align: left;
   margin-bottom: 0.8rem;
 }
