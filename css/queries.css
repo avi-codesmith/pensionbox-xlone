@@ -195,6 +195,7 @@
 
   .hidden-img {
     display: none;
+    height: 50%;
   }
 
   .default-hidden-img {
@@ -301,5 +302,137 @@
 
   .table-2--heading-label-wrapper {
     gap: 2.4rem;
+  }
+}
+
+/* FOR SMALLER TABS */
+
+@media (max-width: 44em) {
+  .hero--page-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-mp4-container {
+    width: 100%;
+  }
+
+  .will-hidden {
+    display: none;
+  }
+
+  .faq {
+    width: 56.2rem;
+  }
+
+  .hero--page-wrapper {
+    padding: 0 4% 0 4%;
+  }
+
+  .section-calculator {
+    padding: 0 6% 0 6%;
+  }
+
+  .header--btn {
+    display: none;
+  }
+
+  .the-end {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}
+
+/* FOR MOBILES */
+
+@media (max-width: 34em) {
+  html {
+    font-size: 40%;
+  }
+
+  .calculator--invest-wrapper {
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: flex-start;
+  }
+
+  .calculator--btn {
+    margin-bottom: 2.4rem;
+  }
+
+  .prime-video {
+    display: none;
+  }
+
+  .hidden-para {
+    display: block;
+  }
+
+  .hidden-paragrafh {
+    display: none;
+  }
+
+  .default-hidden-img {
+    height: 44%;
+  }
+
+  .profile-wrapper {
+    padding: 0 2.4rem 0 2.4rem;
+  }
+
+  .aside-primary-heading {
+    font-size: 1.8rem;
+  }
+
+  .aside-sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .small {
+    padding: 0.6rem 1.4rem !important;
+  }
+
+  .product-img {
+    height: 2.8rem;
+    width: 2.4rem;
+  }
+
+  .bar--divider {
+    height: 6.4rem;
+  }
+
+  .change-c {
+    display: none;
+  }
+
+  .amount-in-month-left {
+    line-height: 5rem;
+  }
+
+  .nav-part {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .story--side-img {
+    height: 8.2rem;
+    width: 12.4rem;
+  }
+
+  .need-wrapper {
+    gap: 1.2rem;
+  }
+
+  .faq {
+    width: 47.2rem;
+  }
+
+  .story {
+    width: 38.4rem;
+  }
+
+  .need-wrapper {
+    flex-direction: column;
   }
 }
