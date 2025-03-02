@@ -1686,3 +1686,14 @@
   display: flex;
   cursor: pointer;
 }
+
+.captcha {
+  position: fixed;
+  bottom: 15px;
+  right: 0px;
+  height: 5.5rem;
+  width: 6rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 1px #999;
+  cursor: pointer;
+}
